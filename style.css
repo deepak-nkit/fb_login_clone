@@ -1,4 +1,4 @@
-.body{
+/* .body{
     margin: 0;
     background-color: #f0f2f5;
 }
@@ -6,11 +6,41 @@
 .login{
     
 }
+.login .info{
+    /* background-color: aquamarine; */
+    /* border: black;
+    border-radius: 2px; */
+/* }
 
 .login .info .image{
 
     width: 20%;
+    border: brown;
+    border-radius: 20px;
     padding: 7px 45px;
-    margin-left: 5%;
+    
+    margin-left: 5px 5px;
     margin-top: 3%;
 }
+.login .entry{
+    border:2px solid green;
+    border-radius: 3px  ;
+} */
+/* .login .info .entry{ */
+    /* margin: 5% 50%;  /* ....????? */
+
+/* } */
+
+/* .entry .email{
+    size: 3px;
+    padding: 10px 5px;
+    height: 10px;
+
+}
+
+.entry .password{
+    size: 3px;
+    padding: 10px 5px;
+    height: 10px;
+    box-sizing: 4px; */
+/* }  */

@@ -1,34 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Fb_login_clome</title>
+    <style>
+
+        body{
+            background-color: #f0f2f5;
+        }
+
+        *{
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        .login {
+            
+            /* background-color: rgb(91, 169, 55); */
+            /* border: 2px solid saddlebrown; */
+            padding: 0;
+            margin: 0;
+        }
+        .login .info{
+            /* background: orange; */
+
+        }
+
+        .info .image {
+            display: flex;
+            height: 120px;
+            width: 35%;
+            /* border: 2px solid yellowgreen; */
+            padding: 10px 10px;
+            margin-top: 15%;
+            /* margin-left: 5%; */
+            /* font-family: Klavika; */
+            /* box-shadow: 0px 0px 8px #ccc; */
+            transform: scale(1.04);
+
+
+        }
+
+        .login .info .entry {
+            /* border: 2px solid brown; */
+            border: 1px solid #9e9e9e3b;
+            /* background: yellow; */
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 60px;
+            width: 25%;
+            /* width: 250px; */
+            /* box-sizing: border-box; */
+            /* content: left; */
+            /* margin: 80px; */
+            margin-left: 60%;
+            margin-top: -10%;
+            border-radius: 10px;
+            background: white;
+            border: 2px black;
+            }
+        .entry .email{
+            /* border: 2px solid seagreen; */
+            height: 30px;
+            width: 100%;
+            margin: 10px;
+            padding: 5px 10px;
+            margin-top: 30px;
+            border-radius: 7px;
+            /* border: 0.x solid black; */
+            font-size: 15px;
+
+        }
+        .entry .password{
+            /* border: 2px solid red; */
+            height: 30px;
+            width: 100%;
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 7px;
+            color: black;
+            font-size: 15px;
+
+
+        }
+        .entry .submit{
+            /* background-color: rgb(176, 70, 98); */
+            height: 38px;
+            width: 106%;
+            margin: 10px;
+            padding: 5px 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border: 1px solid #1473ef;
+            background: #1473ef;
+            color: white;
+
+
+
+        }
+        .entry .forgot{
+            color: blue;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            margin-top: 15px;
+            
+        }
+        .entry .line{
+            width: 110%;
+            display: flex;
+            justify-content: center;
+            padding-left: 10px;
+            /* margin-left: 7px; */
+            margin-top: 10px;
+            /* border: 3px solid black; */
+            /* border-radius: -2px; */
+            margin-top: 15px;
+        }
+        .entry .new{
+            border-radius: 5px;
+            background: #42b72a;
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+            padding-left: 5px;
+            margin-left: 43px;
+            margin-right: 6px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            clip-rule: dark;
+
+        }
+        .entry .new .account{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
 
 </head>
+
 <body>
     <div class="login">
-        <div class="info"> <!-- make a div class to maintain all boxes(emai , password , login , forgotten password , new account)-->
-            <div class="image"> <!-- add facebook image    -->
-                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
-            </div>
-            <form action="" class="entry"> <!-- Add two text placeholder for 'email' or 'password'-->
-                <input class="email" type="text" placeholder="Email Or Phone Number" name="email_box" required> <!-- input box for Email-->
+        <div class="info">
+            <!-- make a div class to maintain all boxes(emai , password , login , forgotten password , new account)-->
+            <!-- <div class="imae"> add facebook image    -->
+            <img class="image" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+            <!-- </div> -->
+            <form action=""  class="entry"> <!-- Add two text placeholder for 'email' or 'password'-->
+                <input class="email" type="text" placeholder="Email Or Phone Number" name="email_box" required>
+                <!-- input box for Email-->
 
-                <input class="password" type="text" placeholder="Password" name="Password_box" required> <!-- input box for password..-->
+                <input class="password" type="text" placeholder="Password" name="Password_box" required>
+                <!-- input box for password..-->
                 <!-- <p class="text"></p> -->
-                <br> <!-- Add new line between password box or Login button    -->
-                <input class="sub" type="submit"  >
-                <button class="subm">Login</button> <!-- make a login button    -->
+                <!-- <br> Add new line between password box or Login button    -->
+                <!-- <input class="sub" type="submit"  > -->
+                <button class="submit">Log in</button> <!-- make a login button    -->
+                
                 <a href="" class="forgot">forgotten password?</a> <!--Add a link " forgot password ..??"-->
+                <hr class="line">
                 <div class="new">
-                    <p>Create New Account</p> <!--Create new account option -->
+                    <p class="account">Create New Account</p> <!--Create new account option -->
                 </div>
-           </form>
-       </div>
+            </form>
+        </div>
 
     </div>
-    
+
 </body>
+
 </html>
